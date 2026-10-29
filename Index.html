@@ -1,0 +1,259 @@
+
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mia's Pretty Paws | Luxury Dog Grooming, Kidderminster</title>
+<meta name="description" content="Luxury dog grooming in Kidderminster. Rated 5.0 on Google. Call 07708 255381 to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#e8a0b4; --pink-deep:#c9748f; --blush:#fdeef2; --cream:#fffaf7;
+  --ink:#4a3640; --muted:#8a7480; --card:#ffffff; --line:#f3d9e1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+.banner{background:var(--ink);color:#fff;text-align:center;font-size:.8rem;padding:7px 12px;letter-spacing:.02em}
+
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;text-decoration:none;color:var(--pink-deep)}
+.nav ul{display:flex;gap:22px;list-style:none;font-size:.95rem;font-weight:600}
+.nav ul a{text-decoration:none;color:var(--ink)}
+.nav ul a:hover{color:var(--pink-deep)}
+.btn{display:inline-block;background:var(--pink-deep);color:#fff;text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 18px rgba(201,116,143,.35)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--pink-deep);border:2px solid var(--pink-deep);box-shadow:none}
+.nav .btn{padding:9px 20px;font-size:.9rem}
+
+.hero{background:radial-gradient(1200px 500px at 80% -10%,#fbd3df 0,transparent 60%),linear-gradient(180deg,var(--blush),var(--cream));padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;font-weight:700;color:var(--pink-deep);margin-bottom:14px}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:16px}
+.hero h1 em{color:var(--pink-deep);font-style:italic}
+.hero p.lead{font-size:1.1rem;color:var(--muted);max-width:480px;margin-bottom:26px}
+.rating{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:700;font-size:.92rem;margin-bottom:26px}
+.stars{color:#f2b134;letter-spacing:2px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img .frame{position:relative;display:grid;place-items:center;border-radius:28px;overflow:hidden;box-shadow:0 24px 60px rgba(201,116,143,.3);aspect-ratio:3/4;background:linear-gradient(160deg,#fbd3df,#f3b6c8)}
+.hero-img .paw{font-size:5rem;opacity:.6}
+.hero-img .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+section{padding:72px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 40px}
+.sec-head h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card .ico{font-size:1.7rem;margin-bottom:10px}
+.card h3{font-size:1.4rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+
+.why{background:var(--blush)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.why-item{display:flex;gap:14px}
+.why-item b{display:block;font-size:1.02rem}
+.why-item span{color:var(--muted);font-size:.93rem}
+.dot{flex:0 0 38px;height:38px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:1.1rem;box-shadow:0 4px 12px rgba(201,116,143,.2)}
+
+.gallery{columns:3 220px;column-gap:14px}
+.gallery figure{break-inside:avoid;margin-bottom:14px;border-radius:18px;overflow:hidden;background:var(--blush)}
+.gallery img{width:100%;display:block}
+
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.review{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.review .stars{font-size:1rem}
+.review p{font-size:.98rem}
+.review .who{margin-top:auto;font-weight:700;font-size:.9rem;color:var(--pink-deep)}
+.review .who small{display:block;color:var(--muted);font-weight:400}
+.src{text-align:center;color:var(--muted);font-size:.82rem;margin-top:22px}
+
+.visit{background:linear-gradient(180deg,var(--cream),var(--blush))}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.info{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:16px}
+.info h2{font-size:2rem}
+.row{display:flex;gap:12px;align-items:flex-start}
+.row .ic{font-size:1.2rem;width:28px}
+.map{border-radius:24px;overflow:hidden;border:1px solid var(--line);min-height:320px}
+.map iframe{width:100%;height:100%;border:0;min-height:320px}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:50}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+
+@media(max-width:820px){
+  .hero-grid,.visit-grid{grid-template-columns:1fr}
+  .nav ul{display:none}
+  .hero{padding:40px 0}
+  .hero-img{order:-1;max-width:340px;margin:0 auto}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="banner">Concept preview of a one-page website, designed for Mia's Pretty Paws</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Mia's Pretty Paws</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Find us</a></li>
+    </ul>
+    <a class="btn call" href="tel:+447708255381">07708 255381</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Luxury dog grooming · Kidderminster</p>
+        <h1>Fresh, fluffy &amp; <em>fabulous.</em></h1>
+        <p class="lead">A calm, beautifully decorated private salon with its own garden, where every dog gets Mia's full, patient attention from their very first groom.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 5.0 on Google · 15 reviews</div>
+        <div class="cta">
+          <a class="btn call" href="tel:+447708255381">Call 07708 255381</a>
+          <a class="btn ghost" href="https://www.facebook.com/share/1DoeTZqsD6/?mibextid=wwXIfr" target="_blank" rel="noopener">Message on Facebook</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="frame" id="heroFrame"><span class="paw">🐾</span><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBNNQ6tDtCBmIJbFzPMa4TOPoh8s7H75hqPcArVqL5Yk15Hr_L60jeD11Cxu76rW-u_3dB74ILTmLLYXPJIT6YYYsrYiuj5tguiVAZfl_q7UZd7NM8r519A_qfLOOkPYypRcAOAD7jeQA=w900-h1200-k-no" alt="Mia grooming a dog at the salon" referrerpolicy="no-referrer" onerror="this.remove()"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Pamper time for your pup</h2>
+        <p>From a quick freshen-up to a full groom and style, every visit is tailored to your dog.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="ico">✂️</div><h3>Full Groom</h3><p>Full-service grooming and styling, finished exactly the way you like it.</p></div>
+        <div class="card"><div class="ico">🫧</div><h3>Bath &amp; Blow Dry</h3><p>A thorough wash and fluffy blow dry that leaves coats soft and smelling lovely.</p></div>
+        <div class="card"><div class="ico">💅</div><h3>Nail Trimming</h3><p>Gentle nail trims for neat, comfortable paws.</p></div>
+        <div class="card"><div class="ico">🎀</div><h3>Puppy's First Groom</h3><p>A gentle introduction to the noises and routine, with breaks to run around.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <div class="sec-head"><h2>Why dogs (and owners) love it here</h2></div>
+      <div class="why-grid">
+        <div class="why-item"><div class="dot">💗</div><div><b>Patient with nervous dogs</b><span>Clients mention Mia's kindness with first-timers and anxious pups.</span></div></div>
+        <div class="why-item"><div class="dot">🌷</div><div><b>A beautiful, relaxed salon</b><span>Prettily decorated and attached to a garden, ideal for a breather mid-groom.</span></div></div>
+        <div class="why-item"><div class="dot">⭐</div><div><b>Rated 5.0 on Google</b><span>Every review so far is five stars, with lots of returning customers.</span></div></div>
+        <div class="why-item"><div class="dot">🐶</div><div><b>One dog, full attention</b><span>Mia goes the extra mile and listens to the look you want.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Fresh from the salon</h2>
+        <p>A peek at some of the happy faces.</p>
+      </div>
+      <div class="gallery" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <section id="reviews" style="background:var(--blush)">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Kind words from customers</h2>
+        <p><span class="stars">★★★★★</span> 5.0 average from 15 Google reviews</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review"><span class="stars">★★★★★</span>
+          <p>We wouldn't trust anyone else to groom our dog Reggie. You can see the care Mia has for him which is just lovely. He always comes out looking amazing and so happy! Her salon is also beautifully decorated and attached to a garden which is perfect.</p>
+          <div class="who">Leah Field<small>Google review</small></div></div>
+        <div class="review"><span class="stars">★★★★★</span>
+          <p>First time taking our dog Bonnie to be groomed &amp; couldn't be happier! She's come out smelling &amp; looking amazing, definitely returning. Highly recommend, Mia was so friendly &amp; amazing with Bonnie.</p>
+          <div class="who">Abbie Lavelle<small>Google review</small></div></div>
+        <div class="review"><span class="stars">★★★★★</span>
+          <p>I just want to say how amazing Mia is, she is always so welcoming, professional, and friendly and is always so loving towards our crazy girls. She always goes the extra mile.</p>
+          <div class="who">Megan Tibbitts<small>Google review</small></div></div>
+        <div class="review"><span class="stars">★★★★★</span>
+          <p>Mia was very friendly and welcoming! Our cockapoo loved it there. Mia is very knowledgeable and was very helpful. Will definitely be returning!</p>
+          <div class="who">Ryan Taylor<small>Google review</small></div></div>
+        <div class="review"><span class="stars">★★★★★</span>
+          <p>Wonderful.</p>
+          <div class="who">T D<small>Google review</small></div></div>
+      </div>
+      <p class="src">Reviews shown as posted on Google Maps.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div class="info">
+        <h2>Book your pup in</h2>
+        <p style="color:var(--muted)">Get in touch to check availability and arrange your dog's appointment.</p>
+        <div class="row"><span class="ic">📍</span><span>1 Renfrew Gardens,<br>Kidderminster DY11 6BA</span></div>
+        <div class="row"><span class="ic">📞</span><a class="call" href="tel:+447708255381">07708 255381</a></div>
+        <div class="row"><span class="ic">✉️</span><a href="mailto:miasprettypaws@gmail.com">miasprettypaws@gmail.com</a></div>
+        <div class="row"><span class="ic">💬</span><a href="https://www.facebook.com/share/1DoeTZqsD6/?mibextid=wwXIfr" target="_blank" rel="noopener">Find us on Facebook</a></div>
+        <a class="btn call" href="tel:+447708255381" style="text-align:center;margin-top:6px">Call 07708 255381</a>
+      </div>
+      <div class="map">
+        <iframe title="Map to Mia's Pretty Paws" loading="lazy" src="https://www.google.com/maps?q=1+Renfrew+Gardens,+Kidderminster+DY11+6BA&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast">Number copied: 07708 255381</div>
+<footer>
+  <div class="wrap">© 2026 Mia's Pretty Paws · Luxury dog grooming, Kidderminster</div>
+</footer>
+
+<script>
+const base='https://lh3.googleusercontent.com/gps-cs-s/';
+const ids=[
+ 'ANWiy9RqJXDtiw1X5XxhnCKoM4Heo0DbCr6NRqOnakBmXRB2FKNUBzgU7iD_xuCiRCEk3SvqWxo_8ukfhfoqnaC3w851O8iwGEzlxNHt2UhbNJVM93ZWsMifl_vxk_bo6HjbKW70MFgyNBhJDEg',
+ 'ANWiy9TJv5IH8gyfxK7ZxDD-7iA9bRekLFzCBOKVQo71etUN_mr-UmakM6aM9zZpWKHxOa7cpAwqzEufmKXT0t4yMr0i2c2tpgrjXSSLOFPEB-lB1Q6CoKeYOwrVjYpU8pViBPz7MjNtY9pd-Hw',
+ 'ANWiy9Q62uJ6jGJ-Ap3kNEoL-n_j7-drf4jEcViqvOKSW6lwaEcWQn8KRbizBcBglM7Ko_GcDtRhSZM7eU9TQyBNvllxktzWOo-9WSIAeMqgiVICjbI4TYdcLaxq7t1OGmdywcqyxDRpT8pF-OdC',
+ 'ANWiy9TFrkqEcRoi6ZJNEJTDAc87oagpywReL_zOgfK5AWvSGJ132usVVbiL4lPtg3LeXRtI5isBSuN5cHtK9G5DLv_JWSAasgpRJipk9_rSzogMSmMcQdDc12tVD_zuLUYrzuNHbAOXZCdEubF4',
+ 'ANWiy9TW9vIU8lhhBrLuE1A2yGOXM6HjqzIjGFtgYEobu2ndPWV84PVVnWscxAsZ4EHsEpAjhdtJI94le_7w4JXHEAMmCaHnM3kp_6qGm0kuckPqASXjcQhXJmVD9Oe9m62_Ms4jJiAkbvfeJQs',
+ 'ANWiy9SShpVUvEhVUtI4b3jV31_ejVDskE1ZPNw9DwiUuY6uG38ARLYUvxJtntCbqx7WQWnwSaFN2guDcw2ttlVWIzqIJSeWnaqz3eu5gkt9Ged35vE6yWCdAAA1v3CT6rd4YulpscsIWu96DjXs',
+ 'ANWiy9TNj-RTDGqB2w12LkVVFud94Wn9ADDjNYUwQadAOgNUDx_uUppLr44g3jGdovY_-TZhICJzycWpixm4FdLehTKctlZrB_wRVGSNKJ5hu1tpDbSS4Td5AsB1D4SDMLcVWvVZy_BCLreF8jC9',
+ 'ANWiy9QZlw8bFPinw3oqHikyzxem9kLaGCjH-EDN5avaXLuNrSEYrNtRux6M4OCinCgnO_d5kj2BRLfSkSMbYUg9ZogLI3q0tX2_eQ-9wVPmMsfMbxlPn9dr0Vc63EjD8lbQRE6ugcvwlcW3giVX'
+];
+const grid=document.getElementById('galleryGrid');
+function checkGallery(){ if(!grid.children.length){ document.getElementById('gallery').style.display='none'; document.querySelectorAll('a[href="#gallery"]').forEach(a=>a.parentElement.remove()); } }
+const isTouch=matchMedia('(pointer:coarse)').matches;
+document.querySelectorAll('a.call').forEach(a=>a.addEventListener('click',e=>{
+  if(isTouch) return;
+  e.preventDefault();
+  const n='07708 255381';
+  (navigator.clipboard?navigator.clipboard.writeText(n):Promise.reject()).catch(()=>{}).finally(()=>{
+    const t=document.getElementById('toast'); t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200);
+  });
+}));
+ids.forEach(id=>{
+  const f=document.createElement('figure');
+  const i=new Image();
+  i.referrerPolicy='no-referrer'; i.alt='A freshly groomed dog at Mia\'s Pretty Paws';
+  i.src=base+id+'=w700';
+  i.onerror=()=>{f.remove();checkGallery()};
+  f.appendChild(i); grid.appendChild(f);
+});
+</script>
+</body>
+</html>
+Displaying mias-pretty-paws-preview.html.
